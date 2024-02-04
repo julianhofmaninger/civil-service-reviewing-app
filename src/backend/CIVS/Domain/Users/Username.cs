@@ -1,4 +1,4 @@
-﻿namespace Domain.Common;
+﻿namespace Domain.Users;
 
 public readonly record struct Username
 {
