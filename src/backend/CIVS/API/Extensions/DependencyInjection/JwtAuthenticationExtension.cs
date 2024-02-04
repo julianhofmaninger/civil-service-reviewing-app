@@ -7,14 +7,13 @@ namespace API.Extensions.DependencyInjection;
 
 public static class JwtAuthenticationExtension
 {
-    private const string Supabase = "Supabase";
 
     public static IServiceCollection AddJwtAuthentication(
         this IServiceCollection services,
         IConfiguration configuration)
     {
         var settings = configuration
-            .GetSection(Supabase)
+            .GetSection(Sections.Supabase)
             .Get<Settings>();
         
         services.AddAuthentication(o =>
