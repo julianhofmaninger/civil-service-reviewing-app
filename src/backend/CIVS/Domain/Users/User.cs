@@ -2,8 +2,10 @@
 
 namespace Domain.Users;
 
-public record User
+public sealed record User
 {
+    private User() { }
+    
     public UserId Id { get; init; }
     public Email Email { get; init; }
     public DateTime EmailConfirmedAt { get; init; }
