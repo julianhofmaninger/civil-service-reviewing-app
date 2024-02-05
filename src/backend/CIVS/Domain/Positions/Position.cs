@@ -1,6 +1,7 @@
 ﻿using Domain.Agencies;
 using Domain.Common;
 using Domain.Departments;
+using Domain.Owners;
 using Domain.Slots;
 
 namespace Domain.Positions;
@@ -20,4 +21,5 @@ public sealed record Position
     public IReadOnlyList<Slot> Slots { get; init; } = [];
     public IReadOnlyList<Agency> Agencies { get; init; } = [];
     public Address Address { get; init; }
+    public Owner Owner { get; init; }
 }
