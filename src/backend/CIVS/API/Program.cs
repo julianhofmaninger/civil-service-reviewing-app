@@ -1,4 +1,5 @@
 using API.Extensions.DependencyInjection;
+using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -8,7 +9,8 @@ builder.Services
 
 builder.Services
     .AddAuthorization()
-    .AddJwtAuthentication(configuration);
+    .AddJwtAuthentication(configuration)
+    .AddInfrastructure(configuration);
 
 builder.Services
     .AddEndpointsApiExplorer()
