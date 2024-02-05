@@ -46,4 +46,6 @@ public readonly record struct Email
             return false;
         }
     }
+
+    public override string ToString() => _value;
 }
