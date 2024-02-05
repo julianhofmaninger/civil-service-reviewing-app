@@ -4,7 +4,7 @@ namespace Domain.Slots;
 
 public sealed record Slot
 {
-    private Slot() { }
+    public Slot() { }
     
     public SlotId Id { get; init; } = SlotId.New();
     public DateOnly Date { get; init; }

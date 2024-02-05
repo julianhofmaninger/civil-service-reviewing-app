@@ -8,7 +8,7 @@ public class EmailConverter : ValueConverter<Email, string>
 {
     public EmailConverter() : base(
         v => v.ToString(),
-        v => new Email(v))
+        v => new Email { Value = v })
     {
         
     }

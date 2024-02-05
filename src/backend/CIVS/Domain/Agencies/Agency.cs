@@ -5,7 +5,7 @@ namespace Domain.Agencies;
 
 public sealed record Agency
 {
-    private Agency() { }
+    public Agency() { }
     
     public AgencyId Id { get; init; } = AgencyId.New();
     public required string Name { get; init; }

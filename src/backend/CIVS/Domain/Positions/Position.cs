@@ -8,7 +8,7 @@ namespace Domain.Positions;
 
 public sealed record Position
 {
-    private Position() { }
+    public Position() { }
     
     public PositionId Id = PositionId.New();
     public DateTime LastSyncedAt { get; set; }
