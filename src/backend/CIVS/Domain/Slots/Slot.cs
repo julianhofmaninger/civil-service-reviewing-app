@@ -1,3 +1,5 @@
+using Domain.Positions;
+
 namespace Domain.Slots;
 
 public sealed record Slot
@@ -9,4 +11,5 @@ public sealed record Slot
     public int Capacity { get; init; }
     public int Available { get; init; }
     public int Used { get; init; }
+    public Position Position { get; init; }
 }
