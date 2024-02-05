@@ -8,4 +8,6 @@ public readonly record struct Username
         ArgumentException.ThrowIfNullOrEmpty(username);
         _value = username;
     }
+
+    public override string ToString() => _value;
 }
