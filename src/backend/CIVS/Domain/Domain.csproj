@@ -7,7 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="StrongIDs" Version="0.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+      <PackageReference Include="StrongIDs" Version="0.2.1" />
     </ItemGroup>
 
 </Project>
